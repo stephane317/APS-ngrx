@@ -1,0 +1,18 @@
+{
+    "programList" : [{
+        "programCode": "A350",
+        "programLetter": "P"
+    }, {
+        "programCode": "A380",
+        "programLetter": "R"
+    }, {
+        "programCode": "A400M",
+        "programLetter": "M"
+    }, {
+        "programCode": "A320",
+        "programLetter": "N"
+    }, {
+        "programCode": "A330-A340",
+        "programLetter": "L"
+    }]
+}
