@@ -5,7 +5,7 @@ import { Program } from '../../models';
 
 import { ActionTypes } from '../../actions/program';
 
-import * as fromProgramList from '../../reducers';
+import * as fromRoot from '../../reducers';
 
 import { Observable } from 'rxjs/Observable';
 
@@ -21,10 +21,12 @@ export class ProgramMenuComponent implements OnInit {
   
 
   constructor(
-    private store: Store<fromProgramList.State>,
+    private store: Store<fromRoot.State>,
   ) { 
 
-    this.programs = this.store.select(state => state.programs.programList);
+    this.programs = this.store.select(fromRoot.getProgramsList);
+
+    
 
     //NOT WORKING WHYYY ?????
     //this.programs = store.select('programList');

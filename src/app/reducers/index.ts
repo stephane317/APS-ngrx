@@ -24,3 +24,5 @@ export function reducer(State: any, action, any) {
 }
 
 export const getProgramsState = (state: State) => state.programs;
+
+export const getProgramsList = createSelector(getProgramsState, (state: fromProgramList.State) => state.programList);

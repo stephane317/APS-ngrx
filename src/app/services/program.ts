@@ -16,6 +16,6 @@ export class ProgramService {
         ){}
 
     getPrograms(): Observable<Program[]> {
-        return this.http.get('./app/config/programs.json').map(res => res.json());
+        return this.http.get('./src/app/config/programs.json').map(res => res.json());
     }
 }
